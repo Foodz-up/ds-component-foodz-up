@@ -9,7 +9,7 @@ module.exports = {
     themeConfig: {
         repoLabel: 'Contribute!',
         // git repo here... gitlab, github
-        repo: 'https://github.com/Foodz-up/design-system-foodz-up',
+        repo: 'https://github.com/Foodz-up/ds-component-foodz-up',
         docsDir: 'docs',
         editLinks: true,
         docsBranch: 'master',
@@ -33,7 +33,7 @@ module.exports = {
                     // external link to git repo...again
                     {
                         text: 'GitHub',
-                        link: 'https://github.com/Foodz-up/design-system-foodz-up'
+                        link: 'https://github.com/Foodz-up/ds-component-foodz-up'
                     }
                 ],
                 sidebar: {
