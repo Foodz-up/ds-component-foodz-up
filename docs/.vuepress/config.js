@@ -41,7 +41,7 @@ module.exports = {
                         {
                             title: 'Components',
                             collapsable: false,
-                            children: ['standard-component']
+                            children: ['ds-component-foodz-up-sample']
                         }
                     ]
                 }

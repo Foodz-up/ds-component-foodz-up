@@ -1,7 +1,7 @@
 <template>
   <div>
-    <standard-component><button>coucou</button></standard-component>
+    <ds-component-foodz-up-sample><button>coucou</button></ds-component-foodz-up-sample>
 
-    <standard-component>This is slot content 2.</standard-component>
+    <ds-component-foodz-up-sample>This is slot content 2.</ds-component-foodz-up-sample>
   </div>
 </template>

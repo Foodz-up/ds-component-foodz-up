@@ -1,10 +1,10 @@
-# standard-component
+# ds-component-foodz-up-sample
 
 Wow! This component is awesome.
 
 ## Example
 
-<Demo componentName="examples-standard-component-doc" />
+<Demo componentName="examples-ds-component-foodz-up-sample-doc" />
 
 ## Source Code
 
