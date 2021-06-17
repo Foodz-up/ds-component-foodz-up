@@ -1,6 +1,6 @@
 {
   "name": "ds-component-foodz-up",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "main": "dist/ds-component-foodz-up.ssr.js",
   "browser": "dist/ds-component-foodz-up.esm.js",
