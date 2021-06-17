@@ -16,3 +16,4 @@ export default install;
 // To allow individual component use, export components
 // each can be registered via Vue.component()
 export * from '@/lib-components/index';
+export * as api from '@/api/index';
