@@ -23,7 +23,8 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "nuxt-property-decorator": "^2.9.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
