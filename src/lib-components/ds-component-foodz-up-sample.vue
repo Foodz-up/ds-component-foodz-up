@@ -1,3 +1,24 @@
+<template>
+  <div class="ds-component-foodz-up-sample">
+    <p>The counter was {{ changedBy }} to <b>{{ counter }}</b>.</p>
+    <button @click="increment">
+      Click +1
+    </button>
+    <button @click="decrement">
+      Click -1
+    </button>
+    <button @click="increment(5)">
+      Click +5
+    </button>
+    <button @click="decrement(5)">
+      Click -5
+    </button>
+    <button @click="reset">
+      Reset
+    </button>
+  </div>
+</template>
+
 <script lang="ts">
 import Vue from 'vue';
 
@@ -50,27 +71,6 @@ export default /*#__PURE__*/Vue.extend({
   },
 });
 </script>
-
-<template>
-  <div class="ds-component-foodz-up-sample">
-    <p>The counter was {{ changedBy }} to <b>{{ counter }}</b>.</p>
-    <button @click="increment">
-      Click +1
-    </button>
-    <button @click="decrement">
-      Click -1
-    </button>
-    <button @click="increment(5)">
-      Click +5
-    </button>
-    <button @click="decrement(5)">
-      Click -5
-    </button>
-    <button @click="reset">
-      Reset
-    </button>
-  </div>
-</template>
 
 <style scoped>
   .ds-component-foodz-up-sample {
