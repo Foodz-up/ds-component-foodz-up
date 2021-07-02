@@ -23,37 +23,13 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from 'nuxt-property-decorator'
-import DynamicSvg from '~/components/Svg/DynamicSvg.vue'
+import Vue from 'vue'
 
-@Component({
-  components: { DynamicSvg }
+
+export default /*#__PURE__*/Vue.extend({
+  name:'InputFoodzUp',
+  props: ['icon', 'type', 'width', 'variableDescription', 'inputVariable', 'value', 'disabled', 'placeholder']
 })
-export default class InputFoodzUp extends Vue {
-  @Prop()
-  icon!: string
-
-  @Prop({ default: 'text' })
-  type!: string
-
-  @Prop({ default: '25' })
-  width!: string
-
-  @Prop()
-  variableDescription!: string
-
-  @Prop()
-  inputVariable!: string
-
-  @Prop()
-  value!: string
-
-  @Prop({ default: false })
-  disabled!: boolean
-
-  @Prop({ required: true })
-  placeholder!: string
-}
 </script>
 
 <style scoped>

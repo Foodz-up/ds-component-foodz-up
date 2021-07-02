@@ -14,5 +14,8 @@ export default Vue.extend({
 <template>
   <div id="app">
     <ds-component-foodz-up-sample />
+    <ds-component-foodz-up-sample-2 />
+    <test-d-d-sample />
+    <ButtonAddToCart />
   </div>
 </template>

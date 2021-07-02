@@ -41,7 +41,7 @@ module.exports = {
                         {
                             title: 'Components',
                             collapsable: false,
-                            children: ['ds-component-foodz-up-sample', 'Sidebar', 'CardArticle', 'ButtonFoodzup']
+                            children: ['ButtonAddToCart', 'test-d-d-sample', 'ds-component-foodz-up-sample', 'ds-component-foodz-up-sample-2']
                         }
                     ]
                 }

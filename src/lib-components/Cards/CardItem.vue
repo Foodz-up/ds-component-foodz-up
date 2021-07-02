@@ -47,40 +47,33 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from 'nuxt-property-decorator'
-import ButtonAddToCart from '~/components/Buttons/ButtonAddToCart.vue'
+import Vue from 'vue'
 
-@Component({
-  components: { ButtonAddToCart }
-})
-export default class CardSpecificMenu extends Vue {
-    @Prop({ required: true })
-    restaurantId!: number
-
-    @Prop({ default: true })
-    addToCartButton!: boolean
-
-    @Prop({ default: false })
-    removeFromCart!: boolean
-
-    itemNumber: number = 0
-
-    get moreThanOneAsQuantity (): boolean {
+export default /*#__PURE__*/Vue.extend({
+  name:'CardItem',
+  props:['restaurantId', 'addToCartButton', 'removeFromCart'],
+  data(){
+    return {
+      itemNumber:0
+    }
+  },
+  computed: {
+    moreThanOneAsQuantity: () =>  {
       return this.itemNumber > 0
     }
-
+  },
+  methods:{
     decrementItemNumber () {
       if (this.itemNumber > 0) { this.itemNumber -= 1 }
-    }
-
+    },
     incrementItemNumber () {
       this.itemNumber += 1
-    }
-
+    },
     removeItemFromCart () {
       this.$emit('removeItemFromCart')
     }
-}
+  }
+})
 </script>
 
 <style scoped>

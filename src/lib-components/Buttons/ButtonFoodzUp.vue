@@ -5,16 +5,16 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from 'nuxt-property-decorator'
-@Component
-export default class ButtonFoodzUp extends Vue {
-    @Prop({ required: true })
-    title!: string
-
+import Vue from 'vue'
+export default /*#__PURE__*/Vue.extend({
+  name: 'ButtonFoodzUp',
+  props: ['title'],
+  methods: {
     buttonClicked () {
       this.$emit('buttonClicked')
     }
-}
+  },
+})
 </script>
 
 <style scoped>
